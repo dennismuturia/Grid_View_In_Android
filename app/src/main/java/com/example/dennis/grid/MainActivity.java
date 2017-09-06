@@ -1,5 +1,6 @@
 package com.example.dennis.grid;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.GridView;
@@ -15,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/NinjaStrike.otf");
         gridView = (GridView) findViewById(R.id.baseGridView);
-        gridView.setAdapter(new AlphabetAdapter(this, letters));
+        gridView.setAdapter(new AlphabetAdapter(this, letters, typeface));
+
     }
 }
