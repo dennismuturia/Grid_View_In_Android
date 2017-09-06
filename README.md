@@ -7,6 +7,6 @@
 ## Author
     Dennis Muturia
 
-##Technology
+## Technology
     Android
     Java
